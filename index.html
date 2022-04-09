@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>ROI Calculator</title>
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+</head>
+
+<body>
+    <section id="roi-calculator">
+        <form onsubmit="return false">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">ROI Calculator</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="name">Time refrence (years):
+                            <span class="unit">Decimal</span>
+                        </td>
+                        <td><input value="3" name="years-reference" id="years-reference" onchange="getYears()"></td>
+                        <td id="years-reference">
+                            <span class="unit">Years</span>
+                        </td>                        
+                    </tr>
+
+                    <tr>
+                        <td class="name">Holes:
+                            <span class="unit">Holes</span>
+                        </td>
+                        <td><input value="16" name="holes" id="holes" onchange="getHoles()"></td>
+                        <td id="holes">
+                            <span class="unit">Holes</span>
+                        </td>                        
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button class="btn-calculate" onclick="calculation();">Calculate</button>
+                        </td>
+                        <td>
+                            <button class="btn-reset" onclick="refresh();">Reset</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </form>
+    </section>
+
+    <section id="results-section">
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Roi sorted by high to low</th>
+                </tr>
+            </thead>
+
+            <tbody id="results">
+                
+
+
+            </tbody>
+
+        </table>
+
+
+
+
+
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>

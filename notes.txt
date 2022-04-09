@@ -1,0 +1,16 @@
+time_ref= 3 * 1 * 365 * 24 * 60
+
+time_item = 1
+
+holes = 16
+
+buy_item = 0.001
+
+sell_item = 0.002
+
+roi_item = sell_item / buy_item
+
+calculation =( time_ref / time_item) * holes * roi_item
+
+
+console.log( calculation  )
