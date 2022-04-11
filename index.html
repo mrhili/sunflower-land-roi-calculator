@@ -62,14 +62,15 @@
 
 body {
     font-family: 'Georgia', 'Calibri';
-    background-image: url("images/bg.jpg");
+    //background-image: url("images/bg.jpg");
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
     box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 
 .cover-container {
   max-width: 42em;
-  backdrop-filter: blur(10px);
+  //backdrop-filter: blur(20px);
+  //color:#333;
 }
 
 
@@ -150,30 +151,37 @@ body {
         <button onclick="calculation();" type="submit" class="btn btn-primary">Calculate</button>
         
       </form>
+
+
+      <hr />
+
+      <section class="">
+        <h1>Results</h1>
+        <table class="table-dark text-center">
+            <thead>
+              <tr>
+                <th colspan="2" scope="col">Roi sorted by high to low</th>
+              </tr>
+            </thead>
+            <tbody id="results">
+              
+            </tbody>
+    
+          </table>
+      </section>
+
+      <hr />
+    
+      <section class="">
+        <h2>Encourage me to do more!</h2>
+        <p>Send me some SFL here : [FARM ID : 21751]</p>
+        <p>Send me some MATICS here : [ADRESS : 0x7da69dCd1b20a43695afEF301B832fd6228E2b0e]</p>
+      </section>
   </main>
 
-  <section class="px-3">
-    <h1>Results</h1>
-    <table class="table-dark">
-        <thead>
-          <tr>
-            <th  colspan="2" scope="col">Roi sorted by high to low</th>
-          </tr>
-        </thead>
-        <tbody id="results">
-          
-        </tbody>
 
-      </table>
-  </section>
 
-  <section class="px-3">
-    <h2>Encourage me to do more!</h2>
-    <p>Send me some SFL here : [FARM ID : 21751]</p>
-    <p>Send me some MATICS here : [ADRESS : 0x7da69dCd1b20a43695afEF301B832fd6228E2b0e]</p>
-  </section>
-
-  <footer class="mt-auto text-black-50">
+  <footer class="mt-auto text-gray-50">
     <p>By Mohamed Amine Mrhili <img src="https://hitcounter.amineghandi.repl.co/count/tag.svg?url=https%3A%2F%2Fgithub.com%2Fbrentvollebregt%2Fhit-counter" alt="Hits"></p>
   </footer>
 </div>
